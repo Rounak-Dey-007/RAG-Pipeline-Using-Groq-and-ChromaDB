@@ -108,7 +108,7 @@ The original PDF files are not included in this repository.
 The research papers used for the project were obtained from their original/public sources. Source links should be provided separately in:
 
 ```text
-sources/Sources.md
+sources.md
 ```
 
 To reproduce the project, download the source documents and place them in the required PDF directory described in the notebook.
