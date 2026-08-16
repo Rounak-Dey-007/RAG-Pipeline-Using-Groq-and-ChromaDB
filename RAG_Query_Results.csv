@@ -1,0 +1,34 @@
+Query No.,Query,Count of Retrieval Documents,Similarity Score,Output
+1,What is RAG?,5,0.7685,"RAG stands for **Retrieval‑Augmented Generation**. It is a framework that combines three core stages—**retrieval** of relevant external information (e.g., from indexed documents), **augmentation** of that information, and **generation** of responses by a language model. By integrating retrieved knowledge into the generation process, RAG aims to produce more accurate, up‑to‑date, and context‑rich outputs."
+2,What is Encoder-Decoder?,5,0.5589,"**Encoder‑Decoder** is a sequence‑to‑sequence architecture in which an **encoder** first processes the input text (e.g., the question together with each retrieved passage and its title) to produce a set of hidden representations, and then a **decoder** takes those representations and generates the answer. In the Fusion‑in‑Decoder method described, each passage is encoded independently, and the decoder jointly attends to all encoded passages to produce the final answer."
+3,What is Python?,5,0.2925,The provided context does not contain any information about what Python is.
+4,Full form of NLP?,5,0.5495,The provided context does not contain the full form of “NLP.”
+5,Who is Kelvin Guu?,5,0.2398,"Kelvin Guu is a researcher who is listed as an author on several of the papers cited in the context (e.g., “Guu, K., Hashimoto, T. B., Oren, Y., and Liang, P.”). He has contributed to work on retrieval‑augmented generation and the REALM models referenced in the document."
+6,Use of Open-domain question answering (Open-QA)?,5,0.6743,"Open‑domain question answering (Open‑QA) is used to answer fact‑based (factoid) questions by retrieving and extracting information from a large collection of documents. It serves as a downstream task that tests a model’s ability to incorporate world knowledge, since answering the questions often requires recalling factual information that is not present in the immediate query. In practice, Open‑QA systems first retrieve relevant passages (e.g., with BM25 or neural retrievers) and then extract or generate the answer from those passages, enabling applications such as building state‑of‑the‑art QA services that can answer a wide range of real‑world questions."
+7,How Knowledge Retriever is defined?,5,0.5711,"The knowledge retriever is defined as the component that, given a query \(x\) and a candidate document \(z\), assigns a **relevance score** \(f(x, z)\) to that document. This score is used to compute the probability of retrieving each document \(p(z \mid x)\) and to weight the contribution of each document in the gradient update (via the term \(r(z)=\big[\frac{p(y \mid z, x)}{p(y \mid x)}-1\big]p(z \mid x)\)). In other words, the retriever’s role is to score and select external documents (e.g., from Wikipedia) that are most relevant to the input query."
+8,What is DPR?,5,0.4584,"DPR is a passage‑retrieval model that learns to retrieve relevant text passages for open‑domain question answering. It is trained on pairs of questions and answers, focusing on building strong semantic representations so that it can select the most appropriate passages from a large, unstructured corpus."
+9,Who is Payal Bajaj?,5,0.1838,"I’m sorry, but the provided context does not contain any information about Payal Bajaj."
+10,Two References name of Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks?,5,0.8071,"The context lists the following two references that explicitly concern Retrieval‑Augmented Generation for knowledge‑intensive NLP tasks:
+
+1. **“Retrieval‑augmented generation for knowledge‑intensive NLP tasks.”**  
+   – Authors: Patrick Lewis, Ethan Perez, Aleksandra Piktus, Fabio Petroni, Vladimir Karpukhin, Naman Goyal, Heinrich Küttler, Mike Lewis, Wen‑tau Yih, Tim Rocktäschel, Sebastian Riedel, Douwe Kiela (FAIR; UCL; NYU).  
+   – arXiv preprint arXiv:2005.11401 (2020).
+
+2. **“Enhancing retrieval‑augmented large language models with iterative retrieval‑generation synergy.”**  
+   – Authors: (not fully listed in the excerpt).  
+   – arXiv preprint arXiv:2305.15294 (2023)."
+11,Comparison between the three paradigms of RAG.,5,0.7591,"**Naive RAG** – The earliest paradigm. It follows a simple, linear pipeline that consists of three main stages: indexing, retrieval, and generation.  
+
+**Advanced RAG** – Builds on the Naive approach but adds a variety of optimization strategies both before retrieval (pre‑retrieval) and after retrieval (post‑retrieval). Its overall flow remains chain‑like, similar to Naive RAG, but the added optimizations aim to address the limitations of the basic pipeline.  
+
+**Modular RAG** – Evolves from the previous two paradigms by introducing greater flexibility. It retains the core ideas of Naive and Advanced RAG but is organized as a set of interchangeable modules, allowing more adaptable and extensible system designs."
+12,Comparison image between the three paradigms of RAG.,5,0.7565,"**Comparison of the three RAG paradigms (as shown in Fig. 3):**
+
+| Paradigm | Visual layout | Core characteristics |
+|----------|---------------|-----------------------|
+| **Naive RAG** (left) | A simple linear chain | Consists of three sequential stages – **indexing → retrieval → generation**. |
+| **Advanced RAG** (middle) | Still a chain‑like structure but with added elements around the retrieval step | Introduces multiple **optimization strategies** both **pre‑retrieval** and **post‑retrieval**, enhancing the basic Naive pipeline. |
+| **Modular RAG** (right) | A more flexible, modular arrangement | Builds on the previous paradigms but emphasizes **greater flexibility** by allowing interchangeable modules and more sophisticated integration of components. |"
+13,What happened in 2014?,5,0.245,"I’m sorry, but the provided context does not contain any information about events that occurred in 2014."
+14,The unfiltered version of TriviaQA is used for open-domain question answering. This Statement is True or False,5,0.5537,False
+15,"LLM means, Large Language Models. This Statement is True or False?",5,0.6122,True

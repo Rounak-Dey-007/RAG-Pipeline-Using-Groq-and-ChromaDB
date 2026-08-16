@@ -1,0 +1,41 @@
+# Environment / Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ChromaDB / Vector Store
+vector_store/
+Vector_Store/
+chroma/
+chroma_db/
+
+# Local PDF dataset
+RAG_pdfs/*.pdf
+
+# Google Colab / local generated folders
+content/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
